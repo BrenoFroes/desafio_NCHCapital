@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,OAAO,CAAC,0CAAI;ADOZ,aAAa;AAKb,mBAAmB",
+    "sources": [
+        "responsive.scss",
+        "global.scss"
+    ],
+    "names": [],
+    "file": "responsive.css"
+}
