@@ -1,5 +1,57 @@
 @import url("https://use.typekit.net/tws1qrr.css");
 body {
-  background-color: grey;
+  background-color: black;
+}
+
+.button-gray {
+  border-radius: 10px;
+  border: 1px solid black;
+  font-size: 1em;
+  background-color: #666666;
+  color: white;
+  margin: 5px 0;
+}
+
+.col-gray {
+  background-color: #484848;
+  background-size: 100% 100%;
+}
+
+.inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+input {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  max-width: 70px;
+  margin: 5px 5px;
+}
+
+input::-webkit-input-placeholder {
+  color: white;
+  font-size: 0.8em;
+}
+
+input:-ms-input-placeholder {
+  color: white;
+  font-size: 0.8em;
+}
+
+input::-ms-input-placeholder {
+  color: white;
+  font-size: 0.8em;
+}
+
+input::placeholder {
+  color: white;
+  font-size: 0.8em;
 }
 /*# sourceMappingURL=style.css.map */
