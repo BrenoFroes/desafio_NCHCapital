@@ -1,6 +1,11 @@
 @import url("https://use.typekit.net/tws1qrr.css");
 body {
-  background-color: black;
+  background-color: black !important;
+}
+
+.col-gray {
+  background-color: #484848;
+  background-size: 100% 100%;
 }
 
 .button-gray {
@@ -12,12 +17,7 @@ body {
   margin: 5px 0;
 }
 
-.col-gray {
-  background-color: #484848;
-  background-size: 100% 100%;
-}
-
-.inputs {
+.inputs-col-2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,7 +27,7 @@ body {
           flex-direction: row;
 }
 
-input {
+.inputs-col-2 input {
   background-color: transparent;
   border: 1px solid white;
   color: white;
@@ -35,23 +35,102 @@ input {
   margin: 5px 5px;
 }
 
-input::-webkit-input-placeholder {
+.inputs-col-2 input::-webkit-input-placeholder {
   color: white;
   font-size: 0.8em;
 }
 
-input:-ms-input-placeholder {
+.inputs-col-2 input:-ms-input-placeholder {
   color: white;
   font-size: 0.8em;
 }
 
-input::-ms-input-placeholder {
+.inputs-col-2 input::-ms-input-placeholder {
   color: white;
   font-size: 0.8em;
 }
 
-input::placeholder {
+.inputs-col-2 input::placeholder {
   color: white;
   font-size: 0.8em;
+}
+
+.slider {
+  width: 100% !important;
+}
+
+#slider-outer-div {
+  width: 100%;
+  padding: 8px;
+}
+
+#slider-outer-div .slider-handle.round {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
+  background-image: linear-gradient(to bottom, white, white);
+  width: 25px !important;
+  height: 25px !important;
+}
+
+#slider-outer-div .slider-track {
+  height: 4px !important;
+  margin-top: -1px !important;
+}
+
+.date-col-2 {
+  color: white;
+  font-size: 0.9em;
+  line-height: 1;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.data {
+  margin: 10px 0;
+}
+
+.data h2 {
+  color: white;
+  font-size: 1.5em;
+  font-weight: 400;
+  margin: 0;
+  text-align: center;
+}
+
+.data p {
+  color: #c0c0c0;
+  font-size: 0.7em;
+  margin: 0;
+  text-align: center;
+}
+
+.col-title {
+  min-height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title-col-10 {
+  font-size: 2em;
+  font-weight: 600;
+  color: white;
+  margin: auto 0;
+}
+
+.col-first-content .col-6 {
+  width: calc(50% - 1.5rem) !important;
+}
+
+.col-first-content h3 {
+  color: white;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+canvas {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
