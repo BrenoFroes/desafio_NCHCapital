@@ -120,17 +120,91 @@ body {
   margin: auto 0;
 }
 
-.col-first-content .col-6 {
-  width: calc(50% - 1.5rem) !important;
-}
-
-.col-first-content h3 {
+.row h3 {
   color: white;
   font-size: 1em;
   font-weight: normal;
 }
 
+.row .col-6.col-gray {
+  width: calc(50% - 1.5rem) !important;
+}
+
 canvas {
   width: 100%;
+}
+
+.boxes .light-blue {
+  background-color: #6FAEDD;
+  height: 50%;
+}
+
+.boxes .dark-blue {
+  background-color: #3B5B77;
+}
+
+.boxes .mid-blue {
+  background-color: #6F9EDB;
+}
+
+.boxes .mid-green {
+  background-color: #317266;
+}
+
+.boxes .dark-green {
+  background-color: #315F59;
+}
+
+.boxes .light-green {
+  background-color: #4AC5BB;
+}
+
+.boxes .dark-yellow {
+  background-color: #FCB714;
+  height: 50%;
+}
+
+.boxes .light-yellow {
+  background-color: #FEE266;
+}
+
+.boxes .dark-brown {
+  background-color: #716557;
+}
+
+.boxes .light-brown {
+  background-color: #C4B07B;
+}
+
+.boxes .orange {
+  background-color: #F15628;
+}
+
+.boxes .col-5 .box, .boxes .col-2 .box {
+  height: 100%;
+}
+
+.boxes .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5px;
+}
+
+.boxes h4 {
+  font-size: 0.8em;
+  max-width: 100%;
+}
+
+.boxes p {
+  font-size: 0.8em;
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */

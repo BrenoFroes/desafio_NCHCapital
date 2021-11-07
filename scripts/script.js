@@ -35,9 +35,10 @@ window.onload = function () {
         //obtendo o contexto 2d
         var ctx = canvas.getContext("2d");
 
-        ctx.fillStyle = "lime";
+        ctx.fillStyle = "transparent";
         ctx.fillRect(0, 0, largura, altura);
         ctx.font = "30px Courier";
+
         function desenharGrafico() {
             //define o avanço horizontal
             x += 5;
@@ -46,13 +47,9 @@ window.onload = function () {
             //desenha uma linha até a posição gerada
             ctx.lineTo(x, altura-valor);
             ctx.stroke();
-            //desenha um retangulo onde está sendo escrito o valor do gráfico
-            ctx.fillStyle = "lime";
-            ctx.fillRect(0, 0, largura, 30);
-            //desenha o texto indicando o valor do gráfico, na posição x atual
-            ctx.fillStyle = "red";
-            ctx.fillText(valor, x, 30);
         }
-        setInterval(desenharGrafico, 100);
+        setInterval(desenharGrafico, 10);
+        setInterval(desenharGrafico, 15);
     }
 };
+
